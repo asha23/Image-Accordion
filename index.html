@@ -1,0 +1,380 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Portable</title>
+<link rel="shortcut icon" href="rare_icon.ico" />
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/image-accordion.css" />
+
+
+<!-- This is version 1.4 of jQuery - IMPORTANT -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.slider.js"></script>
+<script src="js/image.random.js" type="text/javascript"></script>
+
+<!-- Accordion slider scripts -->
+
+<script type="text/javascript">
+
+// See js/jquery.rare.slider.js for further customisation
+
+/*	Properties
+	------------------------------------------------------
+
+	width:1260, 
+	height:800,
+	orientation:'horizontal',
+	alignType:'centerTop',
+	openedPanelSize:0,
+	distance:0,
+	slideshow:true, // toggle automatic slideshow
+	slideshowDelay:5000,
+	slideshowDirection:'next',
+	stopSlideshowOnHover:true,
+	slideDuration:700,
+	openPanelOnMouseOver:false, // toggle mouseover
+	closePanelOnMouseOut:false, // toggle mouseout
+	openPanelOnClick:true, // toggle click to open
+	preloadPanels:true, // toggle preloader
+	shuffle:false,
+	closedPanelSize:0,
+	captionFadeDuration:500, // Caption fade in time
+	captionWidth:300,  // ignore
+	captionHeight:100,  // ignore
+	captionTop:100,  // ignore
+	captionLeft:30, // ignore
+	shadow:false, // ignore
+	linkTarget:'_blank',
+	openPanelDelay:100,	
+	
+	------------------------------------------------
+*/
+
+var accordion;
+
+$(document).ready(function(){
+	$('.shuffle').randomImage({path: 'images/home/'});
+	accordion = $('.accordion').classicAccordion({
+		
+		// initial variables (see above)
+		
+		width:1250, 
+		height:800, 
+		slideshow:false, 
+		shadow:false, 
+		distance:-1, // !IMPORTANT 
+		alignType:'centerTop', 
+		closedPanelSize:46, // !IMPORTANT 
+		openedPanelSize:1260, // !IMPORTANT 
+		openPanelOnMouseOver:false,
+		closePanelOnMouseOut:false,
+		openPanelOnClick:true,
+		
+		// HTML panel properties - These should stay the same as this is dealt with in style.css
+		// Add a new one if you add more images though
+		// Remove if you remove an image
+		
+		panelProperties:{
+				0:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				1:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				2:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				3:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				4:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				5:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				6:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				7:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				8:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				9:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0},
+				10:{captionWidth:260, captionHeight:260, captionTop:0, captionLeft:0}
+			}, openPanel:onOpenPanel
+		});
+	
+	accordion.openPanel(0);
+	
+});	
+
+// !!IMPORTANT!! fires the accordion.
+
+function onOpenPanel(obj) {
+	//console.log(obj.type, obj.index, obj.data);
+}
+	
+</script>
+	
+
+<script>
+function lightbox(){    
+	var theLink = $(".lb").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink});
+}
+function lightbox2(){    
+	var theLink2 = $(".lb2").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink2});
+}
+function lightbox3(){    
+	var theLink3 = $(".lb3").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink3});
+}
+function lightbox4(){    
+	var theLink4 = $(".lb4").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink4});
+}
+function lightbox5(){    
+	var theLink5 = $(".lb5").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink5});
+}
+function lightbox6(){    
+	var theLink6 = $(".lb6").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink6});
+}
+function lightbox7(){    
+	var theLink7 = $(".lb7").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink7});
+}
+function lightbox8(){    
+	var theLink8 = $(".lb8").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink8});
+}
+function lightbox9(){    
+	var theLink9 = $(".lb9").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink9});
+}
+function lightbox10(){    
+	var theLink10 = $(".lb10").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink10});
+}
+function lightbox11(){    
+	var theLink11 = $(".lb11").attr("rel");
+	$.fn.colorbox({width:"1183px", height:"580px", iframe:true, opacity:0.8, top:"120px", href:theLink11});
+}
+
+</script>
+
+</head>
+
+<body>
+<div id="container">
+	<div class="logo"><a href="index.php"><img src="images/rarelogo.png" alt="Portable" width="67" height="33" border="0" class="logoimage"></a>
+		
+<div class="sitemenu">
+	<table border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td valign="top"><ul id="nav2">
+					<li><a href="rare_about_us.php" >About us</a></li>
+				</ul></td>
+			<td valign="top"><ul id="nav_one">
+					<li><a href="rare_branding.php" >Branding</a></li>
+					<li><a href="rare_corporate_reporting.php" >Corporate Reporting</a></li>
+					<li><a href="rare_employee_engagement.php" >Employee Engagement</a></li>
+				</ul></td>
+			<td valign="top"><ul id="nav_two">
+					<li><a href="rare_marketing_communications.php" >Marketing Communications</a></li>
+					<li><a href="rare_digital.php" >Digital Marketing</a></li>
+				</ul></td>
+			<td valign="top"><ul id="nav_three">
+					<li><a href="rare_grey_matter.php" >Grey Matter</a></li>
+					<li><a href="rare_whats_new.php" >What's New?</a></li>
+				</ul></td>
+			<td valign="top"><ul id="nav_four">
+					<li><a href="rare_contact_us.php" >Contact us</a></li>
+				</ul></td>
+		</tr>
+	</table>
+</div>
+	</div>
+	<div id="content">
+		<ul class="accordion">
+			
+			<!-- Accordion front slide item -->
+			
+			<li>
+                <img class="shuffle" src="" alt="">
+            
+            <!--<img src="images/qatargas_1250x800.jpg"/>-->
+				<div class="caption">
+					<!--<h4>Portable</h4>-->
+					<p>Portable helps its clients to communicate online and offline through brand identity, corporate reporting, employee engagement and all other forms of marketing communications.</p><p>&nbsp;</p>
+                    
+                    <div id="ourworkbox"><p><span id="ourwork"></span><br />
+Please note, that as of 31 May, Rare has<br />
+changed address. Our new contact details<br />
+can be found <a href="rare_contact_us.php">here</a>.</p></div>
+					<p><!--<a rel="ttt_lightbox.html" class="lb" onclick="lightbox()" style="cursor:pointer">view case study +</a>--></p>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            <li><img src="images/cr/chime_ar/CR_CRA_1_1250x800.jpg" title="Chime Annual Report" alt="Chime Annual Report"/>
+				<div class="caption">
+					<h4>Chime Communications plc</h4>
+					<p>2012: A defining year.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Online &amp; printed annual reports<br />
+Online CSR report<br />
+Internal branding &amp; communications<br />
+Digital group handbook<br />
+Website management</p>
+					<p><a rel="chime_annual_lightbox.html" class="lb11" onclick="lightbox11()" style="cursor:pointer">view case study +</a></p>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            
+            
+            <li><img src="images/cr/iglo/Iglo_1250x800.jpg" title="Iglo Group" alt="Iglo Group"/>
+				<div class="caption">
+					<h4>Iglo Group</h4>
+					<p>Delivering the promise.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Annual report<br />
+Photographic library development<br />
+Financial presentations</p>
+					<p><a rel="iglo_lightbox.html" class="lb10" onclick="lightbox10()" style="cursor:pointer">view case study +</a></p>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            
+            
+            
+            <li><img src="images/branding/ttt/B_TTT_1250x800.jpg"/>
+				<div class="caption">
+					<h4>Torch Trophy Trust</h4>
+					<p>Recognising commitment, <br />
+rewarding achievement.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Brand identity and implementation<br />
+Website design<br />
+Launch planning and materials</p>
+					<p><a rel="ttt_lightbox.html" class="lb2" onclick="lightbox2()" style="cursor:pointer">view case study +</a></p></div>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+			<li><img src="images/branding/mytrah/Bdg_M_1250x800.jpg"/>
+				<div class="caption">
+					<h4>Mytrah</h4>
+					<p>Rebranding India's fastest growing Independent Power Producer.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />Communications audit<br />Brand identity and guidelines<br />Website design</p>
+					<p><a rel="mytrah_lightbox.html" class="lb3" onclick="lightbox3()" style="cursor:pointer">view case study +</a></p></div>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            
+            
+            <li><img src="images/branding/qatargas/qatar.jpg"/>
+				<div class="caption">
+					<h4>Qatargas</h4>
+					<p>Rebranding the world's largest LNG producer</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Brand positioning and values<br />
+Brand identity and implementation<br />
+Digital guidelines<br />
+Brand book and internal communications<br />
+Corporate brochure<br />
+CSR brochure</p>
+					<p><a rel="qatargas_lightbox.html" class="lb4" onclick="lightbox4()" style="cursor:pointer">view case study +</a></p></div>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><img src="images/cr/keller/CR_Keller_1_1250x800.jpg"/>
+				<div class="caption">
+					<h4>Keller Group plc</h4>
+					<p>Creating foundations for future growth.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Annual report<br />
+Annual review<br />
+Internal communications</p>
+					<p><a rel="keller_lightbox.html" class="lb5" onclick="lightbox5()" style="cursor:pointer">view case study +</a></p>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            <li><img src="images/branding/prof_tech/Mktg_PrtofTech_1250x800.jpg"/>
+				<div class="caption">
+					<h4>Technician Council</h4>
+					<p>Enhancing the public profile and recognition of professional technicians.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Brand identity and guidelines<br />
+Website design<br />
+Launch planning and materials<br />
+'The case for change' brochure<br />
+Scheme launch literature</p>
+					<p><a rel="prof_tech_lightbox.html" class="lb9" onclick="lightbox9()" style="cursor:pointer">view case study +</a></p></div>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            <li><img src="images/cr/access/CR_AB_1_1250x800.jpg"/>
+				<div class="caption">
+					<h4>Access Bank</h4>
+					<p>A catalyst for growth in Africa.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Annual report<br />
+Online summary review<br />
+Corporate Social Responsibility (CSR) report<br />
+Internal communications</p>
+					<p><a rel="access_bank_lightbox.html" class="lb7" onclick="lightbox7()" style="cursor:pointer">view case study +</a></p>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            <li><img src="images/internalcomms/first_artist/EE_FA_1250x800.jpg"/>
+				<div class="caption">
+					<h4>First Artist Corporation plc</h4>
+					<p>Supporting a transforming business.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Internal communications brand language<br />
+Brand book<br />
+Sharesave invitation booklet</p>
+					<p><a rel="first_artist_lightbox.html" class="lb8" onclick="lightbox8()" style="cursor:pointer">view case study +</a></p>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            <li><img src="images/marketing/nhs/Mkg_NHS_1250x800.jpg"/>
+				<div class="caption">
+					<h4>Department of Health</h4>
+					<p>Raising awareness of Healthcare Science.</p><p>&nbsp;</p><div id="ourworkbox"><p><span id="ourwork">Our work:</span><br />
+Campaign name and identity<br />
+Science Directorate branding<br />
+120 page 'Extraordinary You' book<br />
+Book launch at 11 Downing Street</p>
+					<p><a rel="nhs_lightbox.html" class="lb9" onclick="lightbox9()" style="cursor:pointer">view case study +</a></p>
+				</div>
+				<div class="log"></div>
+			</li>
+            
+            
+            
+		</ul>
+		
+<!-- 
+	This div contains the caption
+	dealt with in the javascript accordion file 
+-->
+		
+		<div class="caption-container">
+		
+		<div class="log"></div>
+		</div>
+		
+<!-- -->
+
+	</div>
+	<div class="footerbg"></div>
+<div class="copyright">&copy; Portable 2012</div>
+<div class="footerlinks"><a id="variousconditions" href="rare_conditions.php">Conditions</a> | <a href="rare_privacy_policy.php">Privacy policy</a></div>
+<div class="footericons">
+  <a href="http://www.facebook.com/pages/Rare-Corporate-Design/321494971230758?sk" target="_blank"><img src="images/facebook_icon.png" alt="Portable on Facebook" title="Portable on Facebook" width="30" height="30" border="0" /></a>&nbsp;&nbsp; <a href="https://twitter.com/#!/Rarecorporate" target="_blank"><img src="images/twitter_icon.png" alt="Portable on Twitter" width="30" height="30" border="0" title="Follow Portable on Twitter" /></a></div>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+.accordion
+{
+	position:relative;
+	overflow:hidden;
+	padding: 0px;
+	margin: 0px;
+	background:#000;
+	width:1250px;
+}
+
+
+.accordion .panel
+{
+	background-image:url(../images/preloader.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	position:absolute;
+	overflow:hidden;
+	background-color:#FFF;
+	background-repeat:no-repeat;
+	padding: 0px;
+	margin: 0px;
+}
+
+.accordion .panel .button {
+	width:31px;
+	height:31px;
+	position:absolute;
+	background-image: url(../images/open-slide.png);
+	background-repeat: no-repeat;
+	top:760px;
+	left:10px;
+	
+}
+
+
+.accordion .shadow-horizontal
+{
+	background:url(../images/shadow.png) repeat-Y;
+	position:absolute;
+	right:0px;
+	width:0px;
+	height:100%;
+}
+
+
+.accordion .shadow-vertical
+{
+	background:url(../images/shadow_v.png) repeat-x;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:25px;
+}
+
+
+.accordion .preloader
+{
+	background:url(../images/preloader2.gif) no-repeat;
+	width:62px;
+	height:14px;
+	position:absolute;
+	z-index:15;
+}
+
+
+.caption
+{
+	/*overflow:hidden;*/
+	position:absolute;
+	z-index:200;
+	padding:15px;
+}
+
+
+.caption-background
+{
+	
+	
+	width:100%;
+	height:auto !important;
+}
+
+
+.caption p
+{
+	color:#000;
+	margin:0 0 5px 0 !important;
+	line-height:130%;
+	height: auto !important;
+}
+
+
+.caption p a
+{
+	color:#960;
+}
+
+#ourwork,
+#ourwork_one,
+#ourwork_two,
+#ourwork_three,
+#ourwork_four,
+#ourwork_five,
+#ourwork_six,
+#ourwork_seven,
+#ourwork_eight,
+#ourwork_nine,
+#ourwork_ten {
+	color:#666666;
+}
+
+#ourworkbox,
+#ourworkbox_one,
+#ourworkbox_two,
+#ourworkbox_three,
+#ourworkbox_four,
+#ourworkbox_five,
+#ourworkbox_six,
+#ourworkbox_seven,
+#ourworkbox_eight,
+#ourworkbox_nine,
+#ourworkbox_ten {
+	bottom: 0;
+    float: left;
+    margin: 0 0 5px;
+    position: absolute;
+	z-index:10000;
+}

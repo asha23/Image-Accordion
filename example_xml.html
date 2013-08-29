@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Classic Accordion</title>
+
+<link rel="stylesheet" type="text/css" href="css/classic-accordion.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/classic-accordion-example.css" media="screen"/>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.classicAccordion.min.js"></script>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('.accordion').classicAccordion({xmlSource:'accordion.xml', width:1200, height:400, slideshow:true, distance:0, shadow:true, orientation:'horizontal', closePanelOnMouseOut:true, closedPanelSize:40});
+	});
+	
+</script>
+
+</head>
+
+<body>
+
+	<div class="accordion"></div>
+    
+</body>
+</html>
